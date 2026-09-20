@@ -1,0 +1,535 @@
+@import "tailwindcss";
+@import "./tokens.css";
+
+@theme inline {
+  --color-void: var(--ad-void);
+  --color-panel: var(--ad-panel);
+  --color-line: var(--ad-line);
+  --color-mist: var(--ad-mist);
+  --color-paper: var(--ad-paper);
+  --color-signal: var(--ad-signal);
+  --color-signal-dim: var(--ad-signal-dim);
+  --color-lamp: var(--ad-lamp);
+  --color-ok: var(--ad-ok);
+  --color-hot: var(--ad-hot);
+  --font-headline: var(--ad-font-display);
+  --font-sans: var(--ad-font-ui);
+  --font-mono: var(--ad-font-mono);
+  --radius-ad: var(--ad-radius);
+}
+
+html {
+  background: var(--ad-void);
+  color: var(--ad-paper);
+  color-scheme: dark;
+}
+
+body {
+  min-height: 100dvh;
+  font-family: var(--ad-font-ui);
+  background: #05060a;
+}
+
+.ad-app {
+  min-height: 100dvh;
+  padding: 10px;
+}
+
+.ad-device {
+  display: flex;
+  min-height: calc(100dvh - 20px);
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 26px;
+  background: #0b0c10;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+}
+
+.ad-topbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 20px 10px;
+}
+
+.ad-main {
+  flex: 1;
+  overflow: auto;
+  padding: 8px 20px 28px;
+}
+
+.ad-ember {
+  background:
+    radial-gradient(120% 90% at 80% 120%, rgba(0, 0, 0, 0.18), transparent 45%),
+    linear-gradient(180deg, #ff4f28 0%, #ff2c10 100%);
+}
+
+@media (max-width: 640px) {
+  .ad-app {
+    padding: 6px;
+  }
+
+  .ad-device {
+    min-height: calc(100dvh - 12px);
+    border-radius: 18px;
+  }
+
+  .ad-topbar,
+  .ad-main {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+
+::selection {
+  background: color-mix(in srgb, var(--ad-signal) 40%, transparent);
+  color: var(--ad-paper);
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  min-height: 0;
+}
+
+.ad-card {
+  background: var(--ad-panel);
+  border: 1px solid var(--ad-line);
+  border-radius: var(--ad-radius);
+}
+
+.ad-scroll::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.ad-scroll::-webkit-scrollbar-thumb {
+  background: var(--ad-line);
+  border-radius: 99px;
+}
+
+.ad-work-ring {
+  position: absolute;
+  inset: -3px;
+  border-radius: 999px;
+  box-shadow: 0 0 0 0 color-mix(in srgb, var(--ad-signal) 55%, transparent);
+  animation: ad-pulse 1.8s ease-out infinite;
+}
+
+.ad-work-scan {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: 999px;
+}
+
+.ad-work-scan::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 38%;
+  background: linear-gradient(180deg, transparent, color-mix(in srgb, var(--ad-signal) 45%, transparent), transparent);
+  animation: ad-scan 2.4s linear infinite;
+}
+
+.ad-work-dot {
+  animation: ad-dot 1s ease-in-out infinite;
+}
+
+.ad-lamp-dot {
+  animation: ad-dot 1.6s ease-in-out infinite;
+}
+
+.ad-typing {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 10px;
+}
+
+.ad-typing i {
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--ad-signal);
+  animation: ad-type 1s ease-in-out infinite;
+}
+
+.ad-typing i:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.ad-typing i:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.ad-work-bar {
+  height: 3px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--ad-line);
+}
+
+.ad-work-bar > span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--ad-signal);
+  transition: width 0.8s ease;
+}
+
+.ad-work-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.ad-work-card::after {
+  content: "";
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--ad-signal), transparent);
+  animation: ad-shimmer 2.2s linear infinite;
+}
+
+.ad-live-row {
+  animation: ad-live-in 0.45s ease both;
+}
+
+.ad-live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--ad-font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ad-ok);
+}
+
+.ad-live-badge i {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--ad-ok);
+  animation: ad-dot 1.1s ease-in-out infinite;
+}
+
+.ad-radar {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--ad-signal) 22%, transparent);
+}
+
+.ad-radar::before {
+  content: "";
+  position: absolute;
+  inset: 18%;
+  border-radius: inherit;
+  border: 1px solid var(--ad-line);
+}
+
+.ad-orbit-spin {
+  animation: ad-spin 22s linear infinite;
+}
+
+.ad-orbit-face {
+  animation: ad-spin-rev 22s linear infinite;
+}
+
+.ad-gate-glow {
+  background:
+    radial-gradient(ellipse 70% 50% at 20% 0%, rgba(91, 140, 255, 0.16), transparent 55%),
+    radial-gradient(ellipse 40% 40% at 90% 80%, rgba(255, 200, 87, 0.06), transparent 50%);
+}
+
+.ad-gate-orbit {
+  position: absolute;
+  inset: 0;
+  animation: ad-spin 16s linear infinite;
+}
+
+.ad-gate-orbit > * {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  translate: -50% -50%;
+  animation: ad-spin-rev 16s linear infinite;
+}
+
+.ad-radar-spin {
+  animation: ad-spin 28s linear infinite;
+}
+
+.ad-radar-spin-rev {
+  animation: ad-spin-rev 18s linear infinite;
+}
+
+.ad-mark-breathe {
+  animation: ad-breathe 1.6s ease-in-out infinite;
+}
+
+@keyframes ad-pulse {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--ad-signal) 50%, transparent);
+  }
+  70% {
+    box-shadow: 0 0 0 10px transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+@keyframes ad-scan {
+  0% {
+    transform: translateY(-120%);
+  }
+  100% {
+    transform: translateY(280%);
+  }
+}
+
+@keyframes ad-dot {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.35;
+    transform: scale(0.7);
+  }
+}
+
+@keyframes ad-type {
+  0%,
+  70%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.35;
+  }
+  35% {
+    transform: translateY(-3px);
+    opacity: 1;
+  }
+}
+
+@keyframes ad-shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes ad-live-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ad-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ad-spin-rev {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes ad-breathe {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: scale(0.96);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes ad-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes ad-fade {
+  to {
+    opacity: 1;
+  }
+}
+
+.ad-flow {
+  background: #07080c;
+}
+
+.ad-flow-node {
+  background: color-mix(in srgb, var(--ad-panel) 94%, black);
+  border: 1px solid color-mix(in srgb, var(--ad-line) 70%, #2c3348);
+  border-radius: 16px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.38);
+}
+
+.ad-flow-node-on {
+  border-color: color-mix(in srgb, var(--ad-signal) 55%, var(--ad-line));
+}
+
+.ad-flow-port {
+  position: absolute;
+  z-index: 3;
+  width: 11px;
+  height: 11px;
+  border: 2px solid #07080c;
+  border-radius: 99px;
+  transform: translateY(-50%);
+}
+
+.ad-flow-port-hot {
+  transform: translateY(-50%) scale(1.35);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--ad-signal) 28%, transparent);
+}
+
+.ad-flow-input {
+  width: 100%;
+  min-height: 34px;
+  border: 1px solid var(--ad-line);
+  border-radius: 10px;
+  background: var(--ad-void);
+  padding: 0 10px;
+  color: var(--ad-paper);
+  font-size: 12px;
+  outline: none;
+}
+
+.ad-flow-input:focus {
+  border-color: color-mix(in srgb, var(--ad-signal) 55%, var(--ad-line));
+}
+
+.ad-flow-well {
+  position: relative;
+  overflow: hidden;
+  height: 196px;
+  border-radius: 14px;
+  background:
+    radial-gradient(circle at 62% 38%, rgba(255, 214, 170, 0.95), transparent 32%),
+    radial-gradient(circle at 38% 58%, rgba(176, 196, 255, 0.7), transparent 36%),
+    linear-gradient(160deg, #1a1c24, #0d0e14);
+}
+
+.ad-flow-well-research {
+  background:
+    radial-gradient(circle at 70% 30%, rgba(91, 140, 255, 0.55), transparent 34%),
+    radial-gradient(circle at 30% 70%, rgba(242, 244, 248, 0.18), transparent 32%),
+    linear-gradient(160deg, #141824, #0b0c12);
+}
+
+.ad-flow-well-build {
+  background:
+    radial-gradient(circle at 20% 80%, rgba(61, 220, 151, 0.28), transparent 36%),
+    radial-gradient(circle at 80% 20%, rgba(91, 140, 255, 0.4), transparent 32%),
+    linear-gradient(160deg, #10141c, #0a0b10);
+}
+
+.ad-flow-well-social {
+  background:
+    radial-gradient(circle at 60% 40%, rgba(255, 200, 87, 0.55), transparent 30%),
+    radial-gradient(circle at 30% 70%, rgba(255, 138, 210, 0.35), transparent 34%),
+    linear-gradient(160deg, #1a1418, #0c0a0e);
+}
+
+.ad-flow-well-ops {
+  background:
+    radial-gradient(circle at 50% 45%, rgba(255, 200, 87, 0.4), transparent 32%),
+    radial-gradient(circle at 80% 80%, rgba(91, 140, 255, 0.25), transparent 30%),
+    linear-gradient(160deg, #14140f, #0a0b10);
+}
+
+.ad-flow-orb {
+  position: absolute;
+  width: 58%;
+  height: 58%;
+  left: 22%;
+  top: 14%;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(255, 236, 214, 0.95), rgba(255, 176, 140, 0.1) 62%, transparent 70%);
+  filter: blur(2px);
+}
+
+.ad-flow-orb-2 {
+  left: 8%;
+  top: 36%;
+  width: 46%;
+  height: 46%;
+  background: radial-gradient(circle, rgba(160, 190, 255, 0.55), transparent 68%);
+}
+
+.ad-flow-well-scan {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent, color-mix(in srgb, var(--ad-signal) 28%, transparent), transparent);
+  animation: ad-scan 2.6s linear infinite;
+}
+
+.ad-flow-pulse {
+  stroke-dasharray: 5 9;
+  animation: ad-flow-dash 1.15s linear infinite;
+}
+
+@keyframes ad-flow-dash {
+  to {
+    stroke-dashoffset: -28;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ad-work-ring,
+  .ad-work-scan::after,
+  .ad-work-dot,
+  .ad-lamp-dot,
+  .ad-typing i,
+  .ad-work-card::after,
+  .ad-live-row,
+  .ad-live-badge i,
+  .ad-orbit-spin,
+  .ad-orbit-face,
+  .ad-gate-orbit,
+  .ad-gate-orbit > *,
+  .ad-radar-spin,
+  .ad-radar-spin-rev,
+  .ad-mark-breathe,
+  .ad-flow-pulse,
+  .ad-flow-well-scan,
+  .ad-chart-line,
+  .ad-chart-area {
+    animation: none !important;
+  }
+
+  .ad-chart-line {
+    stroke-dasharray: none;
+    stroke-dashoffset: 0;
+  }
+
+  .ad-chart-area {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,722 @@
+[
+  {
+    "file": "agent-001.png",
+    "seed": "agentdesk-001",
+    "style": "bottts",
+    "roleHint": "Research"
+  },
+  {
+    "file": "agent-002.png",
+    "seed": "research-002",
+    "style": "bottts-neutral",
+    "roleHint": "Build"
+  },
+  {
+    "file": "agent-003.png",
+    "seed": "build-003",
+    "style": "shapes",
+    "roleHint": "Social"
+  },
+  {
+    "file": "agent-004.png",
+    "seed": "social-004",
+    "style": "identicon",
+    "roleHint": "Ops"
+  },
+  {
+    "file": "agent-005.png",
+    "seed": "ops-005",
+    "style": "personas",
+    "roleHint": "Analyst"
+  },
+  {
+    "file": "agent-006.png",
+    "seed": "analyst-006",
+    "style": "lorelei-neutral",
+    "roleHint": "Writer"
+  },
+  {
+    "file": "agent-007.png",
+    "seed": "writer-007",
+    "style": "notionists-neutral",
+    "roleHint": "Scout"
+  },
+  {
+    "file": "agent-008.png",
+    "seed": "scout-008",
+    "style": "thumbs",
+    "roleHint": "Reviewer"
+  },
+  {
+    "file": "agent-009.png",
+    "seed": "reviewer-009",
+    "style": "bottts",
+    "roleHint": "Research"
+  },
+  {
+    "file": "agent-010.png",
+    "seed": "agentdesk-010",
+    "style": "bottts-neutral",
+    "roleHint": "Build"
+  },
+  {
+    "file": "agent-011.png",
+    "seed": "research-011",
+    "style": "shapes",
+    "roleHint": "Social"
+  },
+  {
+    "file": "agent-012.png",
+    "seed": "build-012",
+    "style": "identicon",
+    "roleHint": "Ops"
+  },
+  {
+    "file": "agent-013.png",
+    "seed": "social-013",
+    "style": "personas",
+    "roleHint": "Analyst"
+  },
+  {
+    "file": "agent-014.png",
+    "seed": "ops-014",
+    "style": "lorelei-neutral",
+    "roleHint": "Writer"
+  },
+  {
+    "file": "agent-015.png",
+    "seed": "analyst-015",
+    "style": "notionists-neutral",
+    "roleHint": "Scout"
+  },
+  {
+    "file": "agent-016.png",
+    "seed": "writer-016",
+    "style": "thumbs",
+    "roleHint": "Reviewer"
+  },
+  {
+    "file": "agent-017.png",
+    "seed": "scout-017",
+    "style": "bottts",
+    "roleHint": "Research"
+  },
+  {
+    "file": "agent-018.png",
+    "seed": "reviewer-018",
+    "style": "bottts-neutral",
+    "roleHint": "Build"
+  },
+  {
+    "file": "agent-019.png",
+    "seed": "agentdesk-019",
+    "style": "shapes",
+    "roleHint": "Social"
+  },
+  {
+    "file": "agent-020.png",
+    "seed": "research-020",
+    "style": "identicon",
+    "roleHint": "Ops"
+  },
+  {
+    "file": "agent-021.png",
+    "seed": "build-021",
+    "style": "personas",
+    "roleHint": "Analyst"
+  },
+  {
+    "file": "agent-022.png",
+    "seed": "social-022",
+    "style": "lorelei-neutral",
+    "roleHint": "Writer"
+  },
+  {
+    "file": "agent-023.png",
+    "seed": "ops-023",
+    "style": "notionists-neutral",
+    "roleHint": "Scout"
+  },
+  {
+    "file": "agent-024.png",
+    "seed": "analyst-024",
+    "style": "thumbs",
+    "roleHint": "Reviewer"
+  },
+  {
+    "file": "agent-025.png",
+    "seed": "writer-025",
+    "style": "bottts",
+    "roleHint": "Research"
+  },
+  {
+    "file": "agent-026.png",
+    "seed": "scout-026",
+    "style": "bottts-neutral",
+    "roleHint": "Build"
+  },
+  {
+    "file": "agent-027.png",
+    "seed": "reviewer-027",
+    "style": "shapes",
+    "roleHint": "Social"
+  },
+  {
+    "file": "agent-028.png",
+    "seed": "agentdesk-028",
+    "style": "identicon",
+    "roleHint": "Ops"
+  },
+  {
+    "file": "agent-029.png",
+    "seed": "research-029",
+    "style": "personas",
+    "roleHint": "Analyst"
+  },
+  {
+    "file": "agent-030.png",
+    "seed": "build-030",
+    "style": "lorelei-neutral",
+    "roleHint": "Writer"
+  },
+  {
+    "file": "agent-031.png",
+    "seed": "social-031",
+    "style": "notionists-neutral",
+    "roleHint": "Scout"
+  },
+  {
+    "file": "agent-032.png",
+    "seed": "ops-032",
+    "style": "thumbs",
+    "roleHint": "Reviewer"
+  },
+  {
+    "file": "agent-033.png",
+    "seed": "analyst-033",
+    "style": "bottts",
+    "roleHint": "Research"
+  },
+  {
+    "file": "agent-034.png",
+    "seed": "writer-034",
+    "style": "bottts-neutral",
+    "roleHint": "Build"
+  },
+  {
+    "file": "agent-035.png",
+    "seed": "scout-035",
+    "style": "shapes",
+    "roleHint": "Social"
+  },
+  {
+    "file": "agent-036.png",
+    "seed": "reviewer-036",
+    "style": "identicon",
+    "roleHint": "Ops"
+  },
+  {
+    "file": "agent-037.png",
+    "seed": "agentdesk-037",
+    "style": "personas",
+    "roleHint": "Analyst"
+  },
+  {
+    "file": "agent-038.png",
+    "seed": "research-038",
+    "style": "lorelei-neutral",
+    "roleHint": "Writer"
+  },
+  {
+    "file": "agent-039.png",
+    "seed": "build-039",
+    "style": "notionists-neutral",
+    "roleHint": "Scout"
+  },
+  {
+    "file": "agent-040.png",
+    "seed": "social-040",
+    "style": "thumbs",
+    "roleHint": "Reviewer"
+  },
+  {
+    "file": "agent-041.png",
+    "seed": "ops-041",
+    "style": "bottts",
+    "roleHint": "Research"
+  },
+  {
+    "file": "agent-042.png",
+    "seed": "analyst-042",
+    "style": "bottts-neutral",
+    "roleHint": "Build"
+  },
+  {
+    "file": "agent-043.png",
+    "seed": "writer-043",
+    "style": "shapes",
+    "roleHint": "Social"
+  },
+  {
+    "file": "agent-044.png",
+    "seed": "scout-044",
+    "style": "identicon",
+    "roleHint": "Ops"
+  },
+  {
+    "file": "agent-045.png",
+    "seed": "reviewer-045",
+    "style": "personas",
+    "roleHint": "Analyst"
+  },
+  {
+    "file": "agent-046.png",
+    "seed": "agentdesk-046",
+    "style": "lorelei-neutral",
+    "roleHint": "Writer"
+  },
+  {
+    "file": "agent-047.png",
+    "seed": "research-047",
+    "style": "notionists-neutral",
+    "roleHint": "Scout"
+  },
+  {
+    "file": "agent-048.png",
+    "seed": "build-048",
+    "style": "thumbs",
+    "roleHint": "Reviewer"
+  },
+  {
+    "file": "agent-049.png",
+    "seed": "social-049",
+    "style": "bottts",
+    "roleHint": "Research"
+  },
+  {
+    "file": "agent-050.png",
+    "seed": "ops-050",
+    "style": "bottts-neutral",
+    "roleHint": "Build"
+  },
+  {
+    "file": "agent-051.png",
+    "seed": "analyst-051",
+    "style": "shapes",
+    "roleHint": "Social"
+  },
+  {
+    "file": "agent-052.png",
+    "seed": "writer-052",
+    "style": "identicon",
+    "roleHint": "Ops"
+  },
+  {
+    "file": "agent-053.png",
+    "seed": "scout-053",
+    "style": "personas",
+    "roleHint": "Analyst"
+  },
+  {
+    "file": "agent-054.png",
+    "seed": "reviewer-054",
+    "style": "lorelei-neutral",
+    "roleHint": "Writer"
+  },
+  {
+    "file": "agent-055.png",
+    "seed": "agentdesk-055",
+    "style": "notionists-neutral",
+    "roleHint": "Scout"
+  },
+  {
+    "file": "agent-056.png",
+    "seed": "research-056",
+    "style": "thumbs",
+    "roleHint": "Reviewer"
+  },
+  {
+    "file": "agent-057.png",
+    "seed": "build-057",
+    "style": "bottts",
+    "roleHint": "Research"
+  },
+  {
+    "file": "agent-058.png",
+    "seed": "social-058",
+    "style": "bottts-neutral",
+    "roleHint": "Build"
+  },
+  {
+    "file": "agent-059.png",
+    "seed": "ops-059",
+    "style": "shapes",
+    "roleHint": "Social"
+  },
+  {
+    "file": "agent-060.png",
+    "seed": "analyst-060",
+    "style": "identicon",
+    "roleHint": "Ops"
+  },
+  {
+    "file": "agent-061.png",
+    "seed": "writer-061",
+    "style": "personas",
+    "roleHint": "Analyst"
+  },
+  {
+    "file": "agent-062.png",
+    "seed": "scout-062",
+    "style": "lorelei-neutral",
+    "roleHint": "Writer"
+  },
+  {
+    "file": "agent-063.png",
+    "seed": "reviewer-063",
+    "style": "notionists-neutral",
+    "roleHint": "Scout"
+  },
+  {
+    "file": "agent-064.png",
+    "seed": "agentdesk-064",
+    "style": "thumbs",
+    "roleHint": "Reviewer"
+  },
+  {
+    "file": "agent-065.png",
+    "seed": "research-065",
+    "style": "bottts",
+    "roleHint": "Research"
+  },
+  {
+    "file": "agent-066.png",
+    "seed": "build-066",
+    "style": "bottts-neutral",
+    "roleHint": "Build"
+  },
+  {
+    "file": "agent-067.png",
+    "seed": "social-067",
+    "style": "shapes",
+    "roleHint": "Social"
+  },
+  {
+    "file": "agent-068.png",
+    "seed": "ops-068",
+    "style": "identicon",
+    "roleHint": "Ops"
+  },
+  {
+    "file": "agent-069.png",
+    "seed": "analyst-069",
+    "style": "personas",
+    "roleHint": "Analyst"
+  },
+  {
+    "file": "agent-070.png",
+    "seed": "writer-070",
+    "style": "lorelei-neutral",
+    "roleHint": "Writer"
+  },
+  {
+    "file": "agent-071.png",
+    "seed": "scout-071",
+    "style": "notionists-neutral",
+    "roleHint": "Scout"
+  },
+  {
+    "file": "agent-072.png",
+    "seed": "reviewer-072",
+    "style": "thumbs",
+    "roleHint": "Reviewer"
+  },
+  {
+    "file": "agent-073.png",
+    "seed": "agentdesk-073",
+    "style": "bottts",
+    "roleHint": "Research"
+  },
+  {
+    "file": "agent-074.png",
+    "seed": "research-074",
+    "style": "bottts-neutral",
+    "roleHint": "Build"
+  },
+  {
+    "file": "agent-075.png",
+    "seed": "build-075",
+    "style": "shapes",
+    "roleHint": "Social"
+  },
+  {
+    "file": "agent-076.png",
+    "seed": "social-076",
+    "style": "identicon",
+    "roleHint": "Ops"
+  },
+  {
+    "file": "agent-077.png",
+    "seed": "ops-077",
+    "style": "personas",
+    "roleHint": "Analyst"
+  },
+  {
+    "file": "agent-078.png",
+    "seed": "analyst-078",
+    "style": "lorelei-neutral",
+    "roleHint": "Writer"
+  },
+  {
+    "file": "agent-079.png",
+    "seed": "writer-079",
+    "style": "notionists-neutral",
+    "roleHint": "Scout"
+  },
+  {
+    "file": "agent-080.png",
+    "seed": "scout-080",
+    "style": "thumbs",
+    "roleHint": "Reviewer"
+  },
+  {
+    "file": "agent-081.png",
+    "seed": "reviewer-081",
+    "style": "bottts",
+    "roleHint": "Research"
+  },
+  {
+    "file": "agent-082.png",
+    "seed": "agentdesk-082",
+    "style": "bottts-neutral",
+    "roleHint": "Build"
+  },
+  {
+    "file": "agent-083.png",
+    "seed": "research-083",
+    "style": "shapes",
+    "roleHint": "Social"
+  },
+  {
+    "file": "agent-084.png",
+    "seed": "build-084",
+    "style": "identicon",
+    "roleHint": "Ops"
+  },
+  {
+    "file": "agent-085.png",
+    "seed": "social-085",
+    "style": "personas",
+    "roleHint": "Analyst"
+  },
+  {
+    "file": "agent-086.png",
+    "seed": "ops-086",
+    "style": "lorelei-neutral",
+    "roleHint": "Writer"
+  },
+  {
+    "file": "agent-087.png",
+    "seed": "analyst-087",
+    "style": "notionists-neutral",
+    "roleHint": "Scout"
+  },
+  {
+    "file": "agent-088.png",
+    "seed": "writer-088",
+    "style": "thumbs",
+    "roleHint": "Reviewer"
+  },
+  {
+    "file": "agent-089.png",
+    "seed": "scout-089",
+    "style": "bottts",
+    "roleHint": "Research"
+  },
+  {
+    "file": "agent-090.png",
+    "seed": "reviewer-090",
+    "style": "bottts-neutral",
+    "roleHint": "Build"
+  },
+  {
+    "file": "agent-091.png",
+    "seed": "agentdesk-091",
+    "style": "shapes",
+    "roleHint": "Social"
+  },
+  {
+    "file": "agent-092.png",
+    "seed": "research-092",
+    "style": "identicon",
+    "roleHint": "Ops"
+  },
+  {
+    "file": "agent-093.png",
+    "seed": "build-093",
+    "style": "personas",
+    "roleHint": "Analyst"
+  },
+  {
+    "file": "agent-094.png",
+    "seed": "social-094",
+    "style": "lorelei-neutral",
+    "roleHint": "Writer"
+  },
+  {
+    "file": "agent-095.png",
+    "seed": "ops-095",
+    "style": "notionists-neutral",
+    "roleHint": "Scout"
+  },
+  {
+    "file": "agent-096.png",
+    "seed": "analyst-096",
+    "style": "thumbs",
+    "roleHint": "Reviewer"
+  },
+  {
+    "file": "agent-097.png",
+    "seed": "writer-097",
+    "style": "bottts",
+    "roleHint": "Research"
+  },
+  {
+    "file": "agent-098.png",
+    "seed": "scout-098",
+    "style": "bottts-neutral",
+    "roleHint": "Build"
+  },
+  {
+    "file": "agent-099.png",
+    "seed": "reviewer-099",
+    "style": "shapes",
+    "roleHint": "Social"
+  },
+  {
+    "file": "agent-100.png",
+    "seed": "agentdesk-100",
+    "style": "identicon",
+    "roleHint": "Ops"
+  },
+  {
+    "file": "agent-101.png",
+    "seed": "research-101",
+    "style": "personas",
+    "roleHint": "Analyst"
+  },
+  {
+    "file": "agent-102.png",
+    "seed": "build-102",
+    "style": "lorelei-neutral",
+    "roleHint": "Writer"
+  },
+  {
+    "file": "agent-103.png",
+    "seed": "social-103",
+    "style": "notionists-neutral",
+    "roleHint": "Scout"
+  },
+  {
+    "file": "agent-104.png",
+    "seed": "ops-104",
+    "style": "thumbs",
+    "roleHint": "Reviewer"
+  },
+  {
+    "file": "agent-105.png",
+    "seed": "analyst-105",
+    "style": "bottts",
+    "roleHint": "Research"
+  },
+  {
+    "file": "agent-106.png",
+    "seed": "writer-106",
+    "style": "bottts-neutral",
+    "roleHint": "Build"
+  },
+  {
+    "file": "agent-107.png",
+    "seed": "scout-107",
+    "style": "shapes",
+    "roleHint": "Social"
+  },
+  {
+    "file": "agent-108.png",
+    "seed": "reviewer-108",
+    "style": "identicon",
+    "roleHint": "Ops"
+  },
+  {
+    "file": "agent-109.png",
+    "seed": "agentdesk-109",
+    "style": "personas",
+    "roleHint": "Analyst"
+  },
+  {
+    "file": "agent-110.png",
+    "seed": "research-110",
+    "style": "lorelei-neutral",
+    "roleHint": "Writer"
+  },
+  {
+    "file": "agent-111.png",
+    "seed": "build-111",
+    "style": "notionists-neutral",
+    "roleHint": "Scout"
+  },
+  {
+    "file": "agent-112.png",
+    "seed": "social-112",
+    "style": "thumbs",
+    "roleHint": "Reviewer"
+  },
+  {
+    "file": "agent-113.png",
+    "seed": "ops-113",
+    "style": "bottts",
+    "roleHint": "Research"
+  },
+  {
+    "file": "agent-114.png",
+    "seed": "analyst-114",
+    "style": "bottts-neutral",
+    "roleHint": "Build"
+  },
+  {
+    "file": "agent-115.png",
+    "seed": "writer-115",
+    "style": "shapes",
+    "roleHint": "Social"
+  },
+  {
+    "file": "agent-116.png",
+    "seed": "scout-116",
+    "style": "identicon",
+    "roleHint": "Ops"
+  },
+  {
+    "file": "agent-117.png",
+    "seed": "reviewer-117",
+    "style": "personas",
+    "roleHint": "Analyst"
+  },
+  {
+    "file": "agent-118.png",
+    "seed": "agentdesk-118",
+    "style": "lorelei-neutral",
+    "roleHint": "Writer"
+  },
+  {
+    "file": "agent-119.png",
+    "seed": "research-119",
+    "style": "notionists-neutral",
+    "roleHint": "Scout"
+  },
+  {
+    "file": "agent-120.png",
+    "seed": "build-120",
+    "style": "thumbs",
+    "roleHint": "Reviewer"
+  }
+]
