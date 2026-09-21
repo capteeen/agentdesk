@@ -39,7 +39,7 @@ Open [http://localhost:3000](http://localhost:3000). The floor is open to guests
 
 - Portraits: `public/agent-avatars/agent-001.png` … `agent-120.png` (copied from `/agent-avatars`)
 - Catalog: `lib/avatars.json` and `public/agent-avatars/avatars.json`
-- Mark / favicons: `public/mark.svg`, `public/favicon-*.png`, `app/icon.png`
+- Mark / favicons: `public/agentdesk-logo.png`, `public/favicon-*.png`, `app/icon.png`
 - Colors: void `#0A0B10`, signal `#5B8CFF`, lamp `#FFC857` for “Needs you”
 - Type: Space Grotesk + Inter + JetBrains Mono
 

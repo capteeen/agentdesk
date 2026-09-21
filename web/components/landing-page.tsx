@@ -186,10 +186,13 @@ export function LandingPage() {
 
 function BrandMark() {
   return (
-    <svg viewBox="0 0 24 24" fill="none" aria-hidden>
-      <path d="M12 2.8 21 20h-5.1l-1.7-3.5H9.8L8.1 20H3L12 2.8Z" fill="currentColor" />
-      <path d="M12 8.2 9.9 13h4.2L12 8.2Z" fill="#07110F" />
-    </svg>
+    <Image
+      src="/agentdesk-logo.png"
+      alt=""
+      width={512}
+      height={512}
+      className="brand-mark-image"
+    />
   );
 }
 

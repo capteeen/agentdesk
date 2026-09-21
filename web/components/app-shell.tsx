@@ -48,8 +48,8 @@ export function AppShell({ children }: { children: ReactNode }) {
       <div className="ad-device">
         <header className="ad-topbar">
           <Link href="/" className="flex shrink-0 items-center gap-2.5">
-            <span className="grid size-7 place-items-center rounded-lg bg-signal text-void shadow-[0_0_24px_rgba(125,255,213,.2)]">
-              <Image src="/mark.svg" alt="Agent Desk" width={18} height={18} className="size-[18px]" />
+            <span className="grid size-7 place-items-center overflow-hidden rounded-lg bg-black ring-1 ring-white/10 shadow-[0_0_24px_rgba(125,255,213,.14)]">
+              <Image src="/agentdesk-logo.png" alt="" width={28} height={28} className="size-7" priority />
             </span>
             <span className="font-headline text-[15px] font-semibold tracking-[-0.03em]">agentdesk</span>
             <span className="hidden rounded-full border border-ok/20 bg-ok/8 px-2 py-1 font-mono text-[8px] uppercase tracking-[.15em] text-ok sm:inline-flex">

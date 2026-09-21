@@ -167,10 +167,14 @@ textarea {
   width: 26px;
   height: 26px;
   place-items: center;
-  color: var(--landing-mint);
+  overflow: hidden;
+  border: 1px solid rgba(125,255,213,.18);
+  border-radius: 6px;
+  background: #000;
+  box-shadow: 0 0 20px rgba(125,255,213,.08);
 }
 
-.brand-glyph svg { width: 100%; height: 100%; }
+.brand-glyph .brand-mark-image { width: 100%; height: 100%; object-fit: cover; }
 .landing-nav nav a { color: #819089; font-size: 12px; transition: color .2s ease; }
 .landing-nav nav a:hover { color: var(--landing-cream); }
 
@@ -277,7 +281,7 @@ textarea {
 .orbit-two { width: 83%; aspect-ratio: 1; border-style: dashed; opacity: .48; animation: orbit-spin 32s linear infinite; }
 .orbit-cross { position: absolute; inset: 50% auto auto 50%; width: 83%; height: 1px; background: linear-gradient(90deg, transparent, rgba(125,255,213,.18), transparent); transform: translate(-50%,-50%) rotate(-18deg); }
 .core-node { position: absolute; left: 50%; top: 50%; display: grid; width: 104px; aspect-ratio: 1; translate: -50% -50%; place-items: center; overflow: hidden; border: 1px solid rgba(125,255,213,.35); border-radius: 50%; color: var(--landing-mint); background: radial-gradient(circle, rgba(125,255,213,.13), #09110e 70%); box-shadow: 0 0 60px rgba(125,255,213,.11); }
-.core-node svg { width: 33px; height: 33px; }
+.core-node .brand-mark-image { width: 64px; height: 64px; object-fit: cover; }
 .core-node small { position: absolute; bottom: 17px; font-family: var(--ad-font-mono); font-size: 7px; letter-spacing: .22em; }
 .core-scan { position: absolute; inset: -20%; background: linear-gradient(180deg, transparent 45%, rgba(125,255,213,.17) 50%, transparent 56%); animation: core-scan 3s linear infinite; }
 .agent-signal { position: absolute; z-index: 4; display: flex; align-items: center; gap: 10px; animation: signal-float 4s ease-in-out infinite; }

@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Agent Desk",
     description: "Your agents. One desk.",
-    images: ["/og-promo.png"],
+    images: ["/agentdesk-logo.png"],
   },
 };
 
