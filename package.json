@@ -1,0 +1,16 @@
+{
+  "name": "agentdesk-root",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "web"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=agentdesk"
+  },
+  "dependencies": {
+    "next": "16.3.5",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  }
+}
