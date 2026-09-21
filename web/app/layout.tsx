@@ -24,8 +24,14 @@ const jetbrains = JetBrains_Mono({
   weight: ["400", "500"],
 });
 
+const configuredAppUrl = process.env.NEXT_PUBLIC_APP_URL?.trim();
+const vercelProductionHost = process.env.VERCEL_PROJECT_PRODUCTION_URL?.trim();
+const metadataBase = new URL(
+  configuredAppUrl || (vercelProductionHost ? `https://${vercelProductionHost}` : "http://localhost:3000"),
+);
+
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000"),
+  metadataBase,
   title: {
     default: "Agent Desk",
     template: "%s · Agent Desk",
