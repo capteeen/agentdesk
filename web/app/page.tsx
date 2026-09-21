@@ -1,7 +1,5 @@
-"use client";
-
-import { FloorDashboard } from "@/components/floor-dashboard";
+import { LandingPage } from "@/components/landing-page";
 
 export default function HomePage() {
-  return <FloorDashboard />;
+  return <LandingPage />;
 }

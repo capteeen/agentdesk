@@ -1,16 +1,16 @@
 :root {
-  --ad-void: #0A0B10;
-  --ad-panel: #12141C;
-  --ad-line: #1E2230;
-  --ad-mist: #8B93A8;
-  --ad-paper: #F2F4F8;
-  --ad-signal: #5B8CFF;
-  --ad-signal-dim: #3D66C9;
-  --ad-lamp: #FFC857;
-  --ad-ok: #3DDC97;
-  --ad-hot: #FF5C7A;
-  --ad-radius: 14px;
-  --ad-font-display: var(--font-space), "Space Grotesk", system-ui, sans-serif;
-  --ad-font-ui: var(--font-inter), Inter, system-ui, sans-serif;
+  --ad-void: #060908;
+  --ad-panel: #0d1210;
+  --ad-line: #202a26;
+  --ad-mist: #8b9892;
+  --ad-paper: #eff9f4;
+  --ad-signal: #7dffd5;
+  --ad-signal-dim: #54d9af;
+  --ad-lamp: #ffd36a;
+  --ad-ok: #79f2bc;
+  --ad-hot: #ff715b;
+  --ad-radius: 16px;
+  --ad-font-display: var(--font-syne), Syne, sans-serif;
+  --ad-font-ui: var(--font-manrope), Manrope, sans-serif;
   --ad-font-mono: var(--font-jetbrains), "JetBrains Mono", ui-monospace, monospace;
 }

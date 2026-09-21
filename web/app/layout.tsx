@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, JetBrains_Mono, Space_Grotesk } from "next/font/google";
+import { JetBrains_Mono, Manrope, Syne } from "next/font/google";
 import { AppShell } from "@/components/app-shell";
 import { FloorRuntime } from "@/components/floor-runtime";
 import { WalletModal } from "@/components/wallet-modal";
@@ -7,15 +7,15 @@ import { StoreProvider } from "@/lib/store";
 import { WalletProviders } from "@/components/wallet-providers";
 import "./globals.css";
 
-const space = Space_Grotesk({
+const syne = Syne({
   subsets: ["latin"],
-  variable: "--font-space",
+  variable: "--font-syne",
   weight: ["400", "500", "600", "700"],
 });
 
-const inter = Inter({
+const manrope = Manrope({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-manrope",
 });
 
 const jetbrains = JetBrains_Mono({
@@ -47,14 +47,14 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0A0B10",
+  themeColor: "#050807",
   width: "device-width",
   initialScale: 1,
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${space.variable} ${inter.variable} ${jetbrains.variable}`}>
+    <html lang="en" className={`${syne.variable} ${manrope.variable} ${jetbrains.variable}`}>
       <body className="font-sans antialiased">
         <WalletProviders>
           <StoreProvider>

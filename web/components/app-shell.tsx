@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState, type ReactNode } from "react";
@@ -9,7 +10,7 @@ import { useDesk } from "@/lib/store";
 import { chainLabel, useWallet } from "@/lib/wallet";
 
 const NAV = [
-  { href: "/", label: "Dashboard" },
+  { href: "/dashboard", label: "Command" },
   { href: "/agents", label: "Agents" },
   { href: "/tasks", label: "Tasks" },
   { href: "/approvals", label: "Approvals" },
@@ -18,7 +19,6 @@ const NAV = [
 ];
 
 function isActive(pathname: string, href: string) {
-  if (href === "/") return pathname === "/";
   return pathname === href || pathname.startsWith(`${href}/`);
 }
 
@@ -41,13 +41,20 @@ export function AppShell({ children }: { children: ReactNode }) {
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
+  if (pathname === "/") return <>{children}</>;
+
   return (
     <div className="ad-app">
       <div className="ad-device">
         <header className="ad-topbar">
           <Link href="/" className="flex shrink-0 items-center gap-2.5">
-            <img src="/mark.svg" alt="Agent Desk" width={22} height={22} className="size-[22px] rounded-[6px]" />
-            <span className="font-headline text-[15px] font-semibold tracking-tight">agentdesk</span>
+            <span className="grid size-7 place-items-center rounded-lg bg-signal text-void shadow-[0_0_24px_rgba(125,255,213,.2)]">
+              <Image src="/mark.svg" alt="Agent Desk" width={18} height={18} className="size-[18px]" />
+            </span>
+            <span className="font-headline text-[15px] font-semibold tracking-[-0.03em]">agentdesk</span>
+            <span className="hidden rounded-full border border-ok/20 bg-ok/8 px-2 py-1 font-mono text-[8px] uppercase tracking-[.15em] text-ok sm:inline-flex">
+              System live
+            </span>
           </Link>
 
           <nav className="hidden min-w-0 flex-1 items-center justify-center gap-5 overflow-x-auto lg:flex">
@@ -57,8 +64,8 @@ export function AppShell({ children }: { children: ReactNode }) {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`relative whitespace-nowrap px-3 py-2 text-[13px] ${
-                    active ? "text-paper" : "text-mist hover:text-paper"
+                  className={`relative whitespace-nowrap rounded-lg px-3 py-2 text-[12px] font-medium transition ${
+                    active ? "bg-white/[0.06] text-paper" : "text-mist hover:bg-white/[0.03] hover:text-paper"
                   }`}
                 >
                   {item.label}
@@ -76,7 +83,7 @@ export function AppShell({ children }: { children: ReactNode }) {
             </IconButton>
             <Link
               href="/approvals"
-              className="relative inline-flex size-9 items-center justify-center rounded-full bg-white/[0.04] text-mist ring-1 ring-white/8 hover:text-paper"
+              className="relative inline-flex size-9 items-center justify-center rounded-xl bg-white/[0.035] text-mist ring-1 ring-white/8 transition hover:bg-white/[0.07] hover:text-paper"
               aria-label="Approvals"
             >
               <BellIcon />
@@ -89,7 +96,7 @@ export function AppShell({ children }: { children: ReactNode }) {
             />
             <button
               type="button"
-              className="inline-flex size-9 items-center justify-center rounded-full bg-white/[0.04] text-mist ring-1 ring-white/8 lg:hidden"
+              className="inline-flex size-9 items-center justify-center rounded-xl bg-white/[0.04] text-mist ring-1 ring-white/8 lg:hidden"
               onClick={() => setMobileOpen((value) => !value)}
               aria-label="Open menu"
             >
@@ -202,7 +209,7 @@ function WalletButton({
       <button
         type="button"
         onClick={openConnect}
-        className="inline-flex h-9 items-center rounded-full bg-signal px-3.5 text-[13px] font-medium text-void hover:bg-signal-dim"
+        className="inline-flex h-9 items-center rounded-xl bg-signal px-3.5 text-[12px] font-semibold text-void shadow-[0_8px_24px_rgba(125,255,213,.12)] transition hover:-translate-y-px hover:bg-signal-dim"
       >
         <span className="sm:hidden">Connect</span>
         <span className="hidden sm:inline">Connect wallet</span>
@@ -288,7 +295,7 @@ function IconButton({
       type="button"
       onClick={onClick}
       aria-label={label}
-      className="inline-flex size-9 items-center justify-center rounded-full bg-white/[0.04] text-mist ring-1 ring-white/8 hover:text-paper"
+      className="inline-flex size-9 items-center justify-center rounded-xl bg-white/[0.035] text-mist ring-1 ring-white/8 transition hover:bg-white/[0.07] hover:text-paper"
     >
       {children}
     </button>

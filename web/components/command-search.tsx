@@ -5,7 +5,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useDesk } from "@/lib/store";
 
 const PAGES = [
-  { href: "/", label: "Dashboard", hint: "Floor performance" },
+  { href: "/dashboard", label: "Command", hint: "Floor performance" },
   { href: "/agents", label: "Agents", hint: "Roster and hiring" },
   { href: "/tasks", label: "Tasks", hint: "Queues across desks" },
   { href: "/approvals", label: "Approvals", hint: "Sends, spends, deletes" },

@@ -52,9 +52,12 @@ export function FloorDashboard() {
   return (
     <div className="space-y-5">
       <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
-        <h1 className="font-headline text-[22px] font-medium tracking-tight text-paper/90">
-          Floor assets <span className="text-mist">Performance</span>
-        </h1>
+        <div>
+          <p className="font-mono text-[9px] uppercase tracking-[.18em] text-signal">Mission control / Live</p>
+          <h1 className="mt-1 font-headline text-[26px] font-medium tracking-[-.04em] text-paper/95">
+            The floor <span className="text-mist">is moving.</span>
+          </h1>
+        </div>
         <div className="flex flex-wrap items-center justify-between gap-3 lg:justify-end">
           <HealthScore value={metrics.health} />
           <div className="relative">
@@ -261,18 +264,18 @@ function FloorChart({
         <svg viewBox="0 0 1200 320" className="absolute inset-0 h-full w-full" preserveAspectRatio="none" aria-hidden>
           <defs>
             <linearGradient id="adEmberFill" x1="0" x2="0" y1="0" y2="1">
-              <stop offset="0%" stopColor="#F8E7A8" stopOpacity="0.42" />
-              <stop offset="70%" stopColor="#F8E7A8" stopOpacity="0.08" />
-              <stop offset="100%" stopColor="#F8E7A8" stopOpacity="0" />
+              <stop offset="0%" stopColor="#7DFFD5" stopOpacity="0.32" />
+              <stop offset="70%" stopColor="#7DFFD5" stopOpacity="0.06" />
+              <stop offset="100%" stopColor="#7DFFD5" stopOpacity="0" />
             </linearGradient>
           </defs>
           {[80, 160, 240].map((y) => (
             <line key={y} x1="0" x2="1200" y1={y} y2={y} stroke="rgba(255,255,255,0.14)" strokeWidth="1" strokeDasharray="6 14" />
           ))}
           <path d={area} fill="url(#adEmberFill)" />
-          <path d={line} fill="none" stroke="#F8E7A8" strokeWidth="4" strokeLinejoin="round" strokeLinecap="round" />
+          <path d={line} fill="none" stroke="#7DFFD5" strokeWidth="4" strokeLinejoin="round" strokeLinecap="round" />
           {marks.map((mark) => (
-            <circle key={`${mark.x}-${mark.y}`} cx={mark.x} cy={mark.y} r="7" fill="#F8E7A8" stroke="#ff2f12" strokeWidth="3" />
+            <circle key={`${mark.x}-${mark.y}`} cx={mark.x} cy={mark.y} r="7" fill="#7DFFD5" stroke="#15382D" strokeWidth="3" />
           ))}
         </svg>
 
